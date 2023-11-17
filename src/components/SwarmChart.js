@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
 
-const SwarmChart = ({ data }) => {
+const SwarmChart = ({ data, xScale, yScale }) => {
     const d3Container = useRef(null);
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const SwarmChart = ({ data }) => {
 
             // Define the scale for the X-axis
             const xScale = d3.scaleLinear()
-                .domain([0, 30]) // Assuming 0 to 10 is your data range
+                .domain([-1.5, 1.5]) // Assuming 0 to 10 is your data range
                 .range([0, width]);
 
             // Set a constant Y position for the center line
@@ -45,7 +45,7 @@ const SwarmChart = ({ data }) => {
 
 
 
-            const circleRadius = 10;
+            const circleRadius = 5;
 
             // Force simulation
             const simulation = d3.forceSimulation(data)
@@ -88,7 +88,7 @@ const SwarmChart = ({ data }) => {
                 .attr("cx", function(d) { return d.x; })
                 .attr("cy", function(d) { return d.y; })
                 .attr("r", circleRadius)
-                .style("fill", "#939393")
+                .style("fill", "#15aeec")
                 .style("opacity", 1)
                 .on("mouseover", function(event, d) {
                     tooltip.transition()
@@ -110,7 +110,7 @@ const SwarmChart = ({ data }) => {
                         .style("opacity", 0);
                 });
         }
-    }, [data]);
+    }, [data, xScale, yScale]); // Include xScale and yScale in the dependency array
 
     return (
         <svg
