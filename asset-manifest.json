@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/investigating-uk-drill/static/css/main.5c3cbb0d.css",
-    "main.js": "/investigating-uk-drill/static/js/main.aef524aa.js",
+    "main.css": "/investigating-uk-drill/static/css/main.51032327.css",
+    "main.js": "/investigating-uk-drill/static/js/main.738188d9.js",
     "static/js/787.8fe2b2db.chunk.js": "/investigating-uk-drill/static/js/787.8fe2b2db.chunk.js",
     "index.html": "/investigating-uk-drill/index.html",
-    "main.5c3cbb0d.css.map": "/investigating-uk-drill/static/css/main.5c3cbb0d.css.map",
-    "main.aef524aa.js.map": "/investigating-uk-drill/static/js/main.aef524aa.js.map",
+    "main.51032327.css.map": "/investigating-uk-drill/static/css/main.51032327.css.map",
+    "main.738188d9.js.map": "/investigating-uk-drill/static/js/main.738188d9.js.map",
     "787.8fe2b2db.chunk.js.map": "/investigating-uk-drill/static/js/787.8fe2b2db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c3cbb0d.css",
-    "static/js/main.aef524aa.js"
+    "static/css/main.51032327.css",
+    "static/js/main.738188d9.js"
   ]
 }
