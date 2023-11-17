@@ -414,7 +414,7 @@ const ArticlePage = () => {
             <p>When analysing the original content of a selection of songs, it is clear to see that the sentiment leans towards the negative side of the axis. However, when a dictionary of common slang is used to translate the content, it becomes even more apparent that artists active in the scene appear to hide the meaning of their words. When analysing the sentiment of lyrics translated to common English, the result are even more skewed towards the negative side.</p>
 
             <div className="wide-component">
-                <h2>Aggressiveness of Language in Lyrics</h2>
+                <h2>Sentiment of Language in Lyrics</h2>
                 <h4>Before slang encoding:</h4>
                 <SwarmChart data={artists1} xScale={-3} yScale={3}/>
                 <h4>After slang encoding:</h4>
