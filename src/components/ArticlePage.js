@@ -345,15 +345,14 @@ const ArticlePage = () => {
 
             <p>London has had a long history of gang culture. In current times, drill music is one of the most prominent modes of expression of related activities. In this genre, rivalry, violence, and drugs are no uncommon topics. In this research, we attempt to shine light on how the current state of London's gang culture is expressed through drill music by using several OSINT techniques, as part of Bellingcat's Fall 2023 Hackathon in Amsterdam.</p>
 
+            <p>This map shows how distinct drill groups are present throughout London, as based on data published by several archives of the drill scene, as produced by fans who heavily discuss current activities in the scene.</p>
+
             <div className="wide-map-component">
                 <Map/>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
+            <p>In the table below, a list of examples of groups, their members and opponents showcases to what extent these rivalries are present in the environment.</p>
+
 
             <div className="large-table">
                 <h2>Gang Database</h2>
@@ -381,27 +380,14 @@ const ArticlePage = () => {
                 <p className="see-more">* There are more rows in the full dataset.</p>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
+            <p>This network diagram shows the extent to which released songs are distributed. The songs are indicated as nodes, representing the group of origin by colour, and are linked to other songs based on the topics entailed in its content. These topics have been calculated by an analysis of the frequency of words.</p>
 
             <div className="wide-component">
                 <h2>Song Similarity</h2>
                 {sData && <NetworkDiagram data={sData}/>}
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-
-            {/*<div className="wide-component">*/}
-            {/*    <h2>Artist Similarity</h2>*/}
-            {/*    {aData && <NetworkDiagram data={aData} />}*/}
-            {/*</div>*/}
+            <p>In these songs, it is not uncommon for authors to use slang terms to hide the actual meaning of their words. For outsiders, this effectively conceals the actual content. For people familiar with the culture, it provides a sense of community. Fans online have dedicatedly build multiple dictionaries in which these terms are detailed, which allows us to see the cryptic messages. Below are some of these definitions.</p>
 
             <div className="large-table">
                 <h2>Slang Words and Meanings Dataset</h2>
@@ -425,28 +411,19 @@ const ArticlePage = () => {
                 <p className="see-more">* There are more rows in the full dataset.</p>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
+            <p>When analysing the original content of a selection of songs, it is clear to see that the sentiment leans towards the negative side of the axis. However, when a dictionary of common slang is used to translate the content, it becomes even more apparent that artists active in the scene appear to hide the meaning of their words. When analysing the sentiment of lyrics translated to common English, the result are even more skewed towards the negative side.</p>
 
             <div className="wide-component">
                 <h2>Aggressiveness of Language in Lyrics</h2>
                 <h4>Before slang encoding:</h4>
                 <SwarmChart data={artists1} xScale={-3} yScale={3}/>
                 <h4>After slang encoding:</h4>
-                <SwarmChart data={artists2} xScale={-3} yScale={2}/>
+                <SwarmChart data={artists2} xScale={-3} yScale={3}/>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
 
             <footer>
-                <p>Footer content here</p>
+                <a href="https://github.com/a-jiwa/investigating-gangs-with-drill-music/tree/main">Click here to find the tools</a>
             </footer>
         </div>
     );
